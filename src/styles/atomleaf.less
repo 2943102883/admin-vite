@@ -1,0 +1,185 @@
+
+
+.padding-top-s {
+  padding-top: 4px;
+}
+
+.padding-top-m {
+  padding-top: 8px;
+}
+
+.padding-top-w {
+  padding-top: 16px;
+}
+
+.padding-s {
+  padding: 4px;
+}
+
+.padding-m {
+  padding: 8px;
+}
+
+.padding-w {
+  padding: 16px;
+}
+
+
+.m-top-s {
+  margin-top: 4px;
+}
+
+.m-top-m {
+  margin-top: 8px;
+}
+
+.m-top-w {
+  margin-top: 16px;
+}
+
+.margin-s {
+  margin: 4px;
+}
+
+.margin-m {
+  margin: 8px;
+}
+
+.margin-w {
+  margin: 16px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+
+
+
+
+// 一般工作区
+.d-workspace {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  // 工作区头部
+  .d-workspace-header {
+    flex-grow: 0;
+  }
+
+  // 工作区主体
+  .d-workspace-body {
+    flex-grow: 1;
+  }
+
+  // 工作区页脚
+  .d-workspace-footer {
+    flex-grow: 0;
+  }
+}
+
+// 双栏工作区，包含主工作区和导航工作区，左侧是导航工作区
+.d-ms-space {
+  display: flex;
+  flex-direction: row;
+
+  .d-ms-space-left {
+    flex-grow: 0;
+  }
+
+  .d-ms-space-main {
+    flex-grow: 1;
+  }
+}
+
+/* 数据操作区域 */
+.d-data-space {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .d-data-space-header {
+    flex-grow: 0;
+  }
+
+  .d-data-space-toolbar {
+    flex-grow: 0;
+  }
+
+  .d-data-space-extend {
+    flex-grow: 0;
+  }
+
+  .d-data-space-table {
+    flex: 1 1 auto;
+    overflow: hidden;
+    height: 100%;
+  }
+
+  .d-data-space-footer {
+    flex-grow: 0;
+  }
+}
+
+
+/* 控制台工作区 */
+.d-dash-space {
+  display: flex;
+  flex-direction: column;
+
+  .d-dash-space-header {
+    flex-grow: 0;
+
+  }
+
+  .d-dash-space-toolbar {
+    flex-grow: 0;
+  }
+
+  .d-dash-space-extend {
+    flex-grow: 0;
+  }
+
+  .d-dash-space-table {
+    flex-grow: 1;
+  }
+
+  .d-dash-space-footer {
+    flex-grow: 0;
+  }
+}
+
+.d-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+em {
+  color: #f73131;
+}
+
+#app {
+  // font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #09487a;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+#nav {
+  padding: 30px;
+
+  a {
+    font-weight: bold;
+    color: #2c3e50;
+
+    &.router-link-exact-active {
+      color: #42b983;
+    }
+  }
+}
+
